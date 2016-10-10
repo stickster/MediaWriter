@@ -2,16 +2,16 @@
 
 rm -f *.qm *.po websites/getfedora/*.po websites/spins/*.po websites/labs/*.po
 
-zanata-cli --batch-mode pull &
+zanata-cli --batch-mode pull
 pushd websites
     pushd getfedora
-        zanata-cli --batch-mode pull &
+        zanata-cli --batch-mode pull
     popd
     pushd spins
-        zanata-cli --batch-mode pull &
+        zanata-cli --batch-mode pull
     popd
     pushd labs
-        zanata-cli --batch-mode pull &
+        zanata-cli --batch-mode pull
     popd
 popd
 
